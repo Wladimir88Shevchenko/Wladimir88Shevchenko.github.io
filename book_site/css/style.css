@@ -1,0 +1,305 @@
+body {
+    font-family: Tahoma, Verdana, Arial, Sans-Serif;
+    background-color: #f1fdff;
+}
+
+@font-face {
+    font-family: Monte;
+    src: url(../fonts/monte_kristo.ttf);
+}
+
+
+/*  стилі головного контейнеру */
+
+.main-container {
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: #9f90ff;
+}
+
+
+/*  адаптивність до різних розмірів девайсів */
+
+@media (max-width: 768px) {
+    .main-container {
+        width: auto;
+        max-width: 100%;
+    }
+    .blog_entry #first_p {
+        margin-top: 370px;
+    }
+    .blog_entry {
+        width: auto !important;
+        max-width: 100%;
+        margin-left: -15px;
+        background-color: #cecece;
+        border: 3px solid #6f8e26;
+        margin-bottom: 15px;
+        padding: 12px;
+    }
+    .blog_entry h2 {
+        padding-left: 32%;
+    }
+    .navvv {
+        min-width: 672px;
+    }
+    .main-container .navvv .nav {
+        display: inline-block;
+        position: absolute;
+        left: 3% !important;
+        top: 12% !important;
+    }
+    .img-cent {
+        margin: 10px auto !important;
+    }
+    .navbar-header .navbar-brand {
+        visibility: hidden;
+    }
+}
+
+@media (min-width: 768px) {
+    .main-container {
+        width: 750px;
+    }
+    .blog_entry {
+        width: 724px !important;
+        margin-left: -15px;
+        background-color: #cecece;
+        border: 3px solid #6f8e26;
+        margin-bottom: 15px;
+        padding: 12px;
+    }
+    .blog_entry h2 {
+        padding-left: 32%;
+    }
+    .blog_entry .img-cent {
+        margin-right: 60px;
+    }
+    .navvv {
+        width: 722px;
+    }
+    .main-container .navvv .nav {
+        display: inline-block;
+        position: absolute;
+        right: 4% !important;
+        top: 29%;
+    }
+    .img-cent {
+        margin-left: 42px !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .blog_entry {
+        width: 939px !important;
+        margin-left: -15px;
+        background-color: #cecece;
+        border: 3px solid #6f8e26;
+        margin-bottom: 15px;
+        padding: 12px;
+    }
+    .blog_entry h2 {
+        padding-left: 32%;
+    }
+    .navvv {
+        width: 940px;
+    }
+    .main-container .navvv .nav {
+        display: inline-block;
+        position: absolute;
+        right: 3% !important;
+        top: 29%;
+    }
+    .main-container {
+        width: 970px;
+    }
+}
+
+
+/*  задання розміру 1200 (згідно умов завдання) коли
+це дозволює розмір екрану девайсу користувача*/
+
+@media (min-width: 1200px) {
+    .main-container {
+        width: 1200px;
+    }
+    .navvv {
+        width: 1170px;
+        border-radius: 10px;
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+    }
+    .blog_entry {
+        width: 1170px;
+    }
+    .blog_entry {
+        width: 1172px !important;
+        margin-left: -15px;
+        background-color: #cecece;
+        border: 3px solid #6f8e26;
+        margin-bottom: 15px;
+        padding: 12px;
+    }
+    .blog_entry h2 {
+        padding-left: 0;
+    }
+    .main-container .navvv .nav {
+        display: inline-block;
+        position: absolute;
+        right: 0% !important;
+        top: 29%;
+    }
+}
+
+
+/*  робота з "шапкою"*/
+
+.main-container .navvv {
+    display: inline-block;
+    position: relative;
+    font-size: 24px;
+    background-color: #0c004c;
+}
+
+.main-container .navvv ul li {
+    color: white;
+}
+
+body .navbar #brand {
+    max-height: 90%;
+    max-width: 90%;
+    width: 100px;
+    height: 100px;
+    background-image: url(../images/logo_hover_1.png);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto 20px;
+}
+
+body .navbar #brand:hover {
+    background-image: url(../images/logo_hover_1.png);
+}
+
+.main-container .navvv .nav {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 29%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+}
+
+#menu-heig {
+    position: relative;
+    min-height: 120px;
+}
+
+
+/*  робота з контейнером запису блога */
+
+.img-responsive {
+    display: inline-block;
+    float: left;
+    margin-bottom: 15px;
+    margin-right: 35px;
+    margin-top: 12px;
+    margin-left: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
+}
+
+.blog_entry p {
+    font-size: 24px;
+    color: #000;
+}
+
+.blog_entry ul li {
+    font-size: 24px;
+    color: #000;
+}
+
+.blog_entry h2 {
+    display: inline-block;
+    color: #261b64;
+}
+
+.blog_entry {
+    margin-left: -15px;
+    width: 1170px;
+    background-color: #cecece;
+    border: 3px solid #0f0725;
+    margin-bottom: 15px;
+    padding-left: 15px;
+}
+
+
+/*  налаштування для сторінки add.html */
+
+.form-row {
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+
+.form-row input {
+    float: right;
+    height: 19px;
+    line-height: 19px;
+    padding: 0px 5px;
+    width: 287px;
+    border: 1px solid #abadb3;
+}
+
+.reg-form {
+    width: 416px;
+    margin: 0px auto;
+    font-size: 10pt;
+    color: #fff;
+}
+
+.add_cont h1 {
+    text-align: center;
+    color: #fff;
+}
+
+.form-row textarea {
+    height: 90px;
+    line-height: 16px;
+    font-size: 12px;
+    padding: 0px 5px;
+    width: 416px;
+    border: 1px solid #abadb3;
+    color: #000;
+}
+
+.form-row select {
+    color: #000;
+}
+
+.form-row input[type=submit] {
+    padding: 5px;
+    height: 25px;
+    width: 100%;
+    line-height: 10px;
+    background-color: #329032;
+    color: white;
+    border: 0px;
+}
+
+.form-row input[type=submit]:hover {
+    background-color: #1d731d;
+}
+
+.form-row input[type=file] {
+    float: none;
+    border: 0px;
+}
+
+.form-row input[type=text] {
+    color: #000;
+}
+
+.main-container_2 {
+    background-color: #a7bc07;
+}
