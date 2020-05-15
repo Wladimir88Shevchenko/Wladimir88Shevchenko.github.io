@@ -1,0 +1,218 @@
+/*
+=========================================
+=                 FOR TABLET            =
+=========================================
+*/
+
+@media screen and (max-width: 960px) {
+    /*
+=========================================
+=                 HEADER                =
+=========================================
+*/
+    .container {
+        width: 769px;
+        padding: 0 15;
+        //background-color: rgb(53, 129, 173);
+        height: 100%;
+    }
+    header .container {
+        nav {
+            ul {
+                li {
+                    &:nth-child(1) {
+                        top: 21px;
+                        left: 129px;
+                        a {
+                            font-size: 22px;
+                            i {
+                                font-size: 32px;
+                                margin-right: 5px;
+                            }
+                        }
+                    }
+                    &:nth-child(2) {
+                        top: 5px;
+                        left: 242px;
+                        a {
+                            font-size: 22px;
+                            i {
+                                font-size: 32px;
+                                margin-right: 5px;
+                            }
+                        }
+                    }
+                    &:nth-child(3) {
+                        top: 25px;
+                        right: 108px;
+                        a {
+                            font-size: 16px;
+                            i {
+                                font-size: 18px;
+                                margin-right: 5px;
+                            }
+                        }
+                    }
+                    &:nth-child(4) {
+                        top: 43px;
+                        right: 0px;
+                        a {
+                            font-size: 16px;
+                            i {
+                                font-size: 18px;
+                                margin-right: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .content {
+            .contacts {
+                top: 293px;
+                left: 34px;
+                // font-size: 13px;
+                p {
+                    a {
+                        color: rgb(0, 0, 0) !important;
+                    }
+                }
+            }
+            button {
+                top: 321px;
+                left: 68px;
+                width: 230px;
+                height: 68px;
+            }
+        }
+    }
+    /*
+=========================================
+=                ARTICLE                =
+=========================================
+*/
+    article .container {
+        img {
+            max-width: 60%;
+            max-height: 60%;
+        }
+    }
+    /*
+=========================================
+=                ADVENTAGES             =
+=========================================
+*/
+    .advantages_content {
+        .container {
+            h2 {
+                font-size: 34px;
+            }
+            .row {
+                font-size: 19px;
+                padding: 0 10px;
+            }
+        }
+    }
+    /*
+=========================================
+=                PORTFOLIO              =
+=========================================
+*/
+    .portfolio_block {
+        h3 {
+            font-size: 37px;
+        }
+        .strip_1 {
+            margin-top: 22px;
+        }
+        .strip_2 {
+            margin-top: 23px;
+        }
+        .strip_3 {
+            margin-top: 22px;
+        }
+        .hor_strip {
+            //background-color: red;
+        }
+        a.portfolio {
+            max-width: 268px;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .block_with_miniaturs {
+            #slider {
+                // background-color: green;
+                height: 253px;
+                width: 669px;
+                #slider_box {
+                    top: 5px;
+                    ul {
+                        li {
+                            width: 289.5px !important;
+                            a {
+                                img {
+                                    width: 289.5px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /*
+=========================================
+=                FAQ                    =
+=========================================
+*/
+    .faq {
+        .container {
+            .buttons_faq {
+                margin-top: 45px;
+                a {
+                    font-size: 25px;
+                    &:first-child {
+                        top: 32px;
+                        padding: 5px 136px;
+                    }
+                    &:nth-child(3) {
+                        top: 62px;
+                        padding: 5px 176px;
+                    }
+                    &:nth-child(5) {
+                        top: 93px;
+                        left: 145px;
+                        padding: 5px 213px;
+                    }
+                    &:nth-child(7) {
+                        top: 124px;
+                        padding: 5px 246px;
+                    }
+                }
+            }
+        }
+    }
+    /*
+=========================================
+=                FOOTER                 =
+=========================================
+*/
+    footer {
+        .container {
+            padding: 0px 3%;
+        }
+    }
+    /*
+=========================================
+=             ZZZ    FOR TABLET         =
+=========================================
+*/
+}
+
+//=======================================
+
+/*
+=========================================
+=                 FOR MOBILE            =
+=========================================
+*/

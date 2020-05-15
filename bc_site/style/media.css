@@ -1,0 +1,182 @@
+/*
+=========================================
+=                 FOR TABLET            =
+=========================================
+*/
+@media screen and (max-width: 960px) {
+    /*
+=========================================
+=                 HEADER                =
+=========================================
+*/
+  /* line 13, ../sass/media.scss */
+  .container {
+    width: 769px;
+    padding: 0 15;
+    height: 100%; }
+
+  /* line 23, ../sass/media.scss */
+  header .container nav ul li:nth-child(1) {
+    top: 21px;
+    left: 129px; }
+    /* line 26, ../sass/media.scss */
+    header .container nav ul li:nth-child(1) a {
+      font-size: 22px; }
+      /* line 28, ../sass/media.scss */
+      header .container nav ul li:nth-child(1) a i {
+        font-size: 32px;
+        margin-right: 5px; }
+  /* line 34, ../sass/media.scss */
+  header .container nav ul li:nth-child(2) {
+    top: 5px;
+    left: 242px; }
+    /* line 37, ../sass/media.scss */
+    header .container nav ul li:nth-child(2) a {
+      font-size: 22px; }
+      /* line 39, ../sass/media.scss */
+      header .container nav ul li:nth-child(2) a i {
+        font-size: 32px;
+        margin-right: 5px; }
+  /* line 45, ../sass/media.scss */
+  header .container nav ul li:nth-child(3) {
+    top: 25px;
+    right: 108px; }
+    /* line 48, ../sass/media.scss */
+    header .container nav ul li:nth-child(3) a {
+      font-size: 16px; }
+      /* line 50, ../sass/media.scss */
+      header .container nav ul li:nth-child(3) a i {
+        font-size: 18px;
+        margin-right: 5px; }
+  /* line 56, ../sass/media.scss */
+  header .container nav ul li:nth-child(4) {
+    top: 43px;
+    right: 0px; }
+    /* line 59, ../sass/media.scss */
+    header .container nav ul li:nth-child(4) a {
+      font-size: 16px; }
+      /* line 61, ../sass/media.scss */
+      header .container nav ul li:nth-child(4) a i {
+        font-size: 18px;
+        margin-right: 5px; }
+  /* line 71, ../sass/media.scss */
+  header .container .content .contacts {
+    top: 293px;
+    left: 34px; }
+    /* line 76, ../sass/media.scss */
+    header .container .content .contacts p a {
+      color: black !important; }
+  /* line 81, ../sass/media.scss */
+  header .container .content button {
+    top: 321px;
+    left: 68px;
+    width: 230px;
+    height: 68px; }
+
+    /*
+=========================================
+=                ARTICLE                =
+=========================================
+*/
+  /* line 95, ../sass/media.scss */
+  article .container img {
+    max-width: 60%;
+    max-height: 60%; }
+
+    /*
+=========================================
+=                ADVENTAGES             =
+=========================================
+*/
+  /* line 107, ../sass/media.scss */
+  .advantages_content .container h2 {
+    font-size: 34px; }
+  /* line 110, ../sass/media.scss */
+  .advantages_content .container .row {
+    font-size: 19px;
+    padding: 0 10px; }
+
+    /*
+=========================================
+=                PORTFOLIO              =
+=========================================
+*/
+  /* line 122, ../sass/media.scss */
+  .portfolio_block h3 {
+    font-size: 37px; }
+  /* line 125, ../sass/media.scss */
+  .portfolio_block .strip_1 {
+    margin-top: 22px; }
+  /* line 128, ../sass/media.scss */
+  .portfolio_block .strip_2 {
+    margin-top: 23px; }
+  /* line 131, ../sass/media.scss */
+  .portfolio_block .strip_3 {
+    margin-top: 22px; }
+  /* line 137, ../sass/media.scss */
+  .portfolio_block a.portfolio {
+    max-width: 268px;
+    font-size: 28px;
+    margin-bottom: 20px; }
+  /* line 143, ../sass/media.scss */
+  .portfolio_block .block_with_miniaturs #slider {
+    height: 253px;
+    width: 669px; }
+    /* line 147, ../sass/media.scss */
+    .portfolio_block .block_with_miniaturs #slider #slider_box {
+      top: 5px; }
+      /* line 150, ../sass/media.scss */
+      .portfolio_block .block_with_miniaturs #slider #slider_box ul li {
+        width: 289.5px !important; }
+        /* line 153, ../sass/media.scss */
+        .portfolio_block .block_with_miniaturs #slider #slider_box ul li a img {
+          width: 289.5px; }
+
+    /*
+=========================================
+=                FAQ                    =
+=========================================
+*/
+  /* line 170, ../sass/media.scss */
+  .faq .container .buttons_faq {
+    margin-top: 45px; }
+    /* line 172, ../sass/media.scss */
+    .faq .container .buttons_faq a {
+      font-size: 25px; }
+      /* line 174, ../sass/media.scss */
+      .faq .container .buttons_faq a:first-child {
+        top: 32px;
+        padding: 5px 136px; }
+      /* line 178, ../sass/media.scss */
+      .faq .container .buttons_faq a:nth-child(3) {
+        top: 62px;
+        padding: 5px 176px; }
+      /* line 182, ../sass/media.scss */
+      .faq .container .buttons_faq a:nth-child(5) {
+        top: 93px;
+        left: 145px;
+        padding: 5px 213px; }
+      /* line 187, ../sass/media.scss */
+      .faq .container .buttons_faq a:nth-child(7) {
+        top: 124px;
+        padding: 5px 246px; }
+
+    /*
+=========================================
+=                FOOTER                 =
+=========================================
+*/
+  /* line 201, ../sass/media.scss */
+  footer .container {
+    padding: 0px 3%; }
+
+    /*
+=========================================
+=             ZZZ    FOR TABLET         =
+=========================================
+*/ }
+/*
+=========================================
+=                 FOR MOBILE            =
+=========================================
+*/

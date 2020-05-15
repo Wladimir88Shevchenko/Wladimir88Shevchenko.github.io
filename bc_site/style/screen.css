@@ -1,0 +1,1105 @@
+   /* Welcome to Compass.
+* In this file you should write your main styles. (or centralize your imports)
+* Import this file using the following HTML or equivalent:
+* <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype"), url("../fonts/MyriadProRegular/MyriadProRegular.eot"), url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"), url("../fonts/MyriadProRegular/MyriadProRegular.otf");
+  font-weight: normal;
+  font-style: normal; }
+/* line 5, C:/Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* line 22, C:/Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1; }
+
+/* line 24, C:/Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 26, C:/Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 28, C:/Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 30, C:/Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+  /* line 103, C:/Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+/* line 32, C:/Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 116, C:/Program Files (x86)/Koala/rubygems/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+/* line 27, ../sass/screen.scss */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+/* line 33, ../sass/screen.scss */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+    /*
+=========================================
+=                 HEADER                =
+=========================================
+*/
+/* line 44, ../sass/screen.scss */
+body {
+  overflow-x: hidden; }
+
+/* line 48, ../sass/screen.scss */
+header {
+  max-height: 600px;
+  display: block;
+  background-color: #cdc9c8; }
+
+/* line 54, ../sass/screen.scss */
+.container {
+  width: 1260px;
+  padding: 0 15;
+  height: 100%;
+  display: block;
+  margin: auto; }
+
+/* line 64, ../sass/screen.scss */
+header .container nav {
+  position: relative;
+  z-index: 2;
+  background: transparent url("../images/background/Logo_navigation.png") no-repeat;
+  background-size: contain;
+  height: 190px;
+  margin: 0 15px; }
+  /* line 73, ../sass/screen.scss */
+  header .container nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+    position: absolute;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.75); }
+    /* line 78, ../sass/screen.scss */
+    header .container nav ul li:nth-child(1) {
+      z-index: 6;
+      top: 46px;
+      left: 293px;
+      -webkit-transform: rotate(-10deg);
+      transform: rotate(-10deg);
+      letter-spacing: -0.5px; }
+      /* line 85, ../sass/screen.scss */
+      header .container nav ul li:nth-child(1):hover a {
+        color: #ff7b00; }
+      /* line 88, ../sass/screen.scss */
+      header .container nav ul li:nth-child(1):hover i {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg); }
+      /* line 92, ../sass/screen.scss */
+      header .container nav ul li:nth-child(1) i {
+        -webkit-transition: all 3s;
+        transition: all 3s;
+        color: #ff7b00; }
+      /* line 97, ../sass/screen.scss */
+      header .container nav ul li:nth-child(1) a {
+        -webkit-transition: all 3s;
+        transition: all 3s; }
+    /* line 102, ../sass/screen.scss */
+    header .container nav ul li:nth-child(2) {
+      top: 17px;
+      left: 504px;
+      -webkit-transform: rotate(-10deg);
+      transform: rotate(-10deg);
+      letter-spacing: -0.5px; }
+      /* line 108, ../sass/screen.scss */
+      header .container nav ul li:nth-child(2):hover a {
+        color: #ff7b00; }
+      /* line 111, ../sass/screen.scss */
+      header .container nav ul li:nth-child(2):hover i {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg); }
+      /* line 115, ../sass/screen.scss */
+      header .container nav ul li:nth-child(2) a {
+        -webkit-transition: all 3s;
+        transition: all 3s; }
+      /* line 119, ../sass/screen.scss */
+      header .container nav ul li:nth-child(2) i {
+        -webkit-transition: all 3s;
+        transition: all 3s;
+        color: #ff7b00;
+        margin-right: 17px; }
+    /* line 126, ../sass/screen.scss */
+    header .container nav ul li:nth-child(3) {
+      top: 46px;
+      right: 231px;
+      -webkit-transform: rotate(8deg);
+      transform: rotate(8deg);
+      letter-spacing: 0; }
+      /* line 132, ../sass/screen.scss */
+      header .container nav ul li:nth-child(3):hover a {
+        color: #03899c; }
+      /* line 135, ../sass/screen.scss */
+      header .container nav ul li:nth-child(3):hover i {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg); }
+      /* line 139, ../sass/screen.scss */
+      header .container nav ul li:nth-child(3) a {
+        -webkit-transition: all 3s;
+        transition: all 3s;
+        font-size: 23px; }
+      /* line 144, ../sass/screen.scss */
+      header .container nav ul li:nth-child(3) i {
+        -webkit-transition: all 3s;
+        transition: all 3s;
+        margin-right: 17px;
+        font-size: 32px;
+        letter-spacing: 0px;
+        margin-right: 6px;
+        position: relative;
+        top: 2px; }
+    /* line 155, ../sass/screen.scss */
+    header .container nav ul li:nth-child(4) {
+      top: 78px;
+      right: 40px;
+      -webkit-transform: rotate(6deg);
+      transform: rotate(6deg);
+      letter-spacing: 0; }
+      /* line 161, ../sass/screen.scss */
+      header .container nav ul li:nth-child(4):hover a {
+        color: #03899c; }
+      /* line 164, ../sass/screen.scss */
+      header .container nav ul li:nth-child(4):hover i {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg); }
+      /* line 168, ../sass/screen.scss */
+      header .container nav ul li:nth-child(4) a {
+        -webkit-transition: all 3s;
+        transition: all 3s;
+        font-size: 23px; }
+      /* line 173, ../sass/screen.scss */
+      header .container nav ul li:nth-child(4) i {
+        -webkit-transition: all 3s;
+        transition: all 3s;
+        letter-spacing: 0px;
+        font-size: 25px;
+        margin-right: 15px;
+        position: relative;
+        top: -2px; }
+    /* line 183, ../sass/screen.scss */
+    header .container nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 33px;
+      font-family: Impact, arial, sans-serif; }
+      /* line 188, ../sass/screen.scss */
+      header .container nav ul li a i {
+        font-size: 40px;
+        color: #03899c;
+        margin-right: 21px;
+        vertical-align: middle; }
+/* line 198, ../sass/screen.scss */
+header .container .content {
+  background: #cdc9c8 url("../images/background/header_bgi.png") center no-repeat;
+  display: block;
+  margin-top: -138px;
+  position: relative;
+  z-index: 1;
+  background-size: 627px auto;
+  height: 540px; }
+  /* line 206, ../sass/screen.scss */
+  header .container .content .contacts {
+    font-family: Myriad Pro, arial, sans-serif;
+    text-shadow: 5px 5px 5px rgba(95, 95, 95, 0.75);
+    position: relative;
+    top: 163px;
+    left: 934px;
+    max-width: 320px; }
+    /* line 214, ../sass/screen.scss */
+    header .container .content .contacts i {
+      display: inline-block;
+      color: #03899c; }
+    /* line 218, ../sass/screen.scss */
+    header .container .content .contacts p {
+      color: white; }
+    /* line 221, ../sass/screen.scss */
+    header .container .content .contacts .telephones {
+      width: 300px; }
+      /* line 224, ../sass/screen.scss */
+      header .container .content .contacts .telephones i {
+        float: left;
+        position: relative; }
+      /* line 228, ../sass/screen.scss */
+      header .container .content .contacts .telephones:hover #mob_img {
+        -webkit-transform: scale(1.2, 1.2);
+        transform: scale(1.2, 1.2); }
+      /* line 232, ../sass/screen.scss */
+      header .container .content .contacts .telephones #mob_img {
+        -webkit-transition: all 2s;
+        transition: all 2s; }
+      /* line 236, ../sass/screen.scss */
+      header .container .content .contacts .telephones .tel_div {
+        display: block;
+        float: right; }
+        /* line 237, ../sass/screen.scss */
+        header .container .content .contacts .telephones .tel_div p {
+          position: relative;
+          font-size: 27px;
+          right: 42px;
+          top: 9px; }
+          /* line 242, ../sass/screen.scss */
+          header .container .content .contacts .telephones .tel_div p:last-child {
+            top: 0px; }
+          /* line 245, ../sass/screen.scss */
+          header .container .content .contacts .telephones .tel_div p a {
+            text-decoration: none;
+            color: white; }
+    /* line 254, ../sass/screen.scss */
+    header .container .content .contacts .fb_contacts {
+      position: relative;
+      top: 20px;
+      width: 300px; }
+      /* line 259, ../sass/screen.scss */
+      header .container .content .contacts .fb_contacts:hover i {
+        -webkit-transform: scale(1.3, 1.3);
+        transform: scale(1.3, 1.3); }
+      /* line 263, ../sass/screen.scss */
+      header .container .content .contacts .fb_contacts i {
+        float: left;
+        position: relative;
+        -webkit-transition: all 2s;
+        transition: all 2s; }
+      /* line 269, ../sass/screen.scss */
+      header .container .content .contacts .fb_contacts p {
+        position: relative;
+        top: 11px;
+        right: 21px;
+        font-size: 26px;
+        display: block;
+        float: right; }
+        /* line 276, ../sass/screen.scss */
+        header .container .content .contacts .fb_contacts p a {
+          text-decoration: none;
+          color: white; }
+  /* line 283, ../sass/screen.scss */
+  header .container .content button {
+    border-radius: 5px;
+    position: relative;
+    top: 261px;
+    left: 968px;
+    width: 230px;
+    height: 68px;
+    background-color: #03899c;
+    border: none;
+    color: #F4F1F1;
+    font-size: 30px;
+    font-family: Myriad Pro, arial, sans-serif;
+    text-shadow: 5px 5px 5px rgba(95, 95, 95, 0.4);
+    -webkit-box-shadow: 5px 5px 5px rgba(95, 95, 95, 0.4);
+    box-shadow: 5px 5px 5px rgba(95, 95, 95, 0.4);
+    -webkit-transition: all 1.5s;
+    transition: all 1.5s; }
+    /* line 300, ../sass/screen.scss */
+    header .container .content button:hover {
+      cursor: pointer;
+      background-color: #02616F;
+      color: white; }
+
+    /*
+=========================================
+=                ARTICLE                =
+=========================================
+*/
+/* line 314, ../sass/screen.scss */
+article .container {
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 63px; }
+  /* line 318, ../sass/screen.scss */
+  article .container h2 {
+    color: #202a30;
+    text-align: center;
+    font-size: 54px;
+    font-family: Impact, arial, sans-serif;
+    text-shadow: 5px 5px 5px rgba(95, 95, 95, 0.4); }
+    /* line 324, ../sass/screen.scss */
+    article .container h2:hover i {
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg); }
+    /* line 327, ../sass/screen.scss */
+    article .container h2 i {
+      padding-right: 5px;
+      -webkit-transition: all 2s;
+      transition: all 2s; }
+    /* line 331, ../sass/screen.scss */
+    article .container h2 span {
+      position: relative;
+      top: 2px;
+      left: -1px; }
+  /* line 337, ../sass/screen.scss */
+  article .container img {
+    float: left;
+    margin-left: -17px;
+    padding-right: 26px; }
+  /* line 342, ../sass/screen.scss */
+  article .container .txt {
+    text-indent: 20px;
+    text-align: justify;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+    font-family: Myriad Pro, arial, sans-serif; }
+    /* line 348, ../sass/screen.scss */
+    article .container .txt:nth-child(2) {
+      margin-top: 40px;
+      padding-bottom: 20px; }
+
+    /*
+=========================================
+=                ADVENTAGES             =
+=========================================
+*/
+/* line 360, ../sass/screen.scss */
+.advantages_content {
+  clear: both;
+  position: relative;
+  height: 500px; }
+  /* line 366, ../sass/screen.scss */
+  .advantages_content:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -80px;
+    bottom: 0;
+    background: transparent url(../images/background/advantages_background.png) no-repeat;
+    background-size: cover;
+    background-position: center center; }
+  /* line 377, ../sass/screen.scss */
+  .advantages_content .container {
+    color: white;
+    text-shadow: 5px 5px 5px rgba(95, 95, 95, 0.4);
+    position: relative; }
+    /* line 381, ../sass/screen.scss */
+    .advantages_content .container h2 {
+      position: absolute;
+      top: 45px;
+      right: 31px;
+      font-size: 44px;
+      font-family: Myriad Pro, arial, sans-serif; }
+      /* line 387, ../sass/screen.scss */
+      .advantages_content .container h2:hover i {
+        -webkit-transform: skew(30deg, 20deg);
+                transform: skew(30deg, 20deg); }
+      /* line 390, ../sass/screen.scss */
+      .advantages_content .container h2 i {
+        font-size: 38px;
+        margin-right: 8px;
+        -webkit-transition: all 2s;
+        transition: all 2s; }
+    /* line 396, ../sass/screen.scss */
+    .advantages_content .container .row {
+      display: block;
+      width: 100%;
+      background-color: purple;
+      position: relative;
+      top: 124px;
+      font-size: 26px;
+      padding: 0 35px; }
+      /* line 404, ../sass/screen.scss */
+      .advantages_content .container .row div {
+        float: left;
+        width: 30%;
+        position: relative; }
+        /* line 405, ../sass/screen.scss */
+        .advantages_content .container .row div h3 {
+          font-family: Impact, arial, sans-serif;
+          text-align: center;
+          padding-bottom: 20px; }
+          /* line 409, ../sass/screen.scss */
+          .advantages_content .container .row div h3 i {
+            float: left;
+            position: relative;
+            top: 11px;
+            left: 10px;
+            font-size: 45px; }
+        /* line 417, ../sass/screen.scss */
+        .advantages_content .container .row div p {
+          font-family: Myriad Pro, arial, sans-serif;
+          padding: 0 35px; }
+        /* line 424, ../sass/screen.scss */
+        .advantages_content .container .row div:after {
+          content: "";
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          width: 3px;
+          background: white; }
+        /* line 433, ../sass/screen.scss */
+        .advantages_content .container .row div:nth-child(2) {
+          padding-right: 1.23%; }
+        /* line 436, ../sass/screen.scss */
+        .advantages_content .container .row div:last-child {
+          width: 38.87%;
+          float: right; }
+          /* line 439, ../sass/screen.scss */
+          .advantages_content .container .row div:last-child i {
+            top: 11px;
+            left: 30px; }
+        /* line 444, ../sass/screen.scss */
+        .advantages_content .container .row div:last-child:after {
+          display: none; }
+
+    /*
+=========================================
+=                PORTFOLIO              =
+=========================================
+*/
+/* line 458, ../sass/screen.scss */
+.portfolio_block h3 {
+  text-shadow: 5px 5px 5px rgba(95, 95, 95, 0.4);
+  font-size: 55px;
+  font-family: Impact, arial, sans-serif;
+  text-align: center;
+  color: #202a30; }
+  /* line 464, ../sass/screen.scss */
+  .portfolio_block h3:after {
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 10%;
+    height: 1px;
+    color: #03889b;
+    text-align: center; }
+  /* line 475, ../sass/screen.scss */
+  .portfolio_block h3:hover i {
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px); }
+  /* line 480, ../sass/screen.scss */
+  .portfolio_block h3 i {
+    margin-right: 20px;
+    -webkit-transition: all 2s;
+    transition: all 2s; }
+/* line 485, ../sass/screen.scss */
+.portfolio_block .strip {
+  width: 30%;
+  height: 2px;
+  background-color: #03899c;
+  margin: 10px auto; }
+/* line 491, ../sass/screen.scss */
+.portfolio_block .strip_1 {
+  margin-top: 32px;
+  width: 17%; }
+/* line 495, ../sass/screen.scss */
+.portfolio_block .strip_2 {
+  margin-top: 36px;
+  width: 30%; }
+/* line 499, ../sass/screen.scss */
+.portfolio_block .strip_3 {
+  margin-top: 36px;
+  width: 40%; }
+/* line 503, ../sass/screen.scss */
+.portfolio_block .hor_strip {
+  width: 40%;
+  height: 2px;
+  margin: 0 auto;
+  margin-bottom: 22px;
+  background-color: #03899c;
+  display: block; }
+/* line 511, ../sass/screen.scss */
+.portfolio_block a.portfolio {
+  text-align: center;
+  max-width: 268px;
+  line-height: 40px;
+  padding: 10px 0;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: #03899c;
+  border: none;
+  color: #F4F1F1;
+  font-family: Myriad Pro, arial, sans-serif;
+  text-shadow: 5px 5px 5px rgba(95, 95, 95, 0.4);
+  -webkit-box-shadow: 5px 5px 5px rgba(95, 95, 95, 0.4);
+  box-shadow: 5px 5px 5px rgba(95, 95, 95, 0.4);
+  margin: auto;
+  display: block;
+  font-family: Impact, arial, sans-serif;
+  font-size: 40px;
+  margin-bottom: 220px;
+  position: relative;
+  top: 0px; }
+  /* line 533, ../sass/screen.scss */
+  .portfolio_block a.portfolio:hover {
+    cursor: pointer;
+    background-color: #02616F;
+    color: white; }
+/* line 540, ../sass/screen.scss */
+.portfolio_block .block_with_miniaturs #slider {
+  position: relative;
+  height: 300px;
+  padding: 0 25px;
+  width: 860px;
+  margin: 30px auto; }
+  /* line 548, ../sass/screen.scss */
+  .portfolio_block .block_with_miniaturs #slider #slider_box {
+    overflow: hidden;
+    position: relative;
+    top: 30px; }
+    /* line 552, ../sass/screen.scss */
+    .portfolio_block .block_with_miniaturs #slider #slider_box ul {
+      overflow: hidden;
+      width: 1000%; }
+      /* line 555, ../sass/screen.scss */
+      .portfolio_block .block_with_miniaturs #slider #slider_box ul li {
+        float: left;
+        display: block;
+        height: 245px;
+        margin-right: 20px;
+        border-radius: 30px;
+        overflow: hidden;
+        -webkit-box-shadow: 5px 5px 5px rgba(95, 95, 95, 0.4);
+                box-shadow: 5px 5px 5px rgba(95, 95, 95, 0.4); }
+        /* line 563, ../sass/screen.scss */
+        .portfolio_block .block_with_miniaturs #slider #slider_box ul li a {
+          z-index: 21;
+          display: block;
+          background-color: green; }
+          /* line 567, ../sass/screen.scss */
+          .portfolio_block .block_with_miniaturs #slider #slider_box ul li a img {
+            z-index: 3;
+            height: 245px;
+            width: 385px; }
+  /* line 580, ../sass/screen.scss */
+  .portfolio_block .block_with_miniaturs #slider #nav_slider div {
+    width: 68px;
+    height: 112px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto; }
+  /* line 590, ../sass/screen.scss */
+  .portfolio_block .block_with_miniaturs #slider #nav_slider #left_nav {
+    left: -50px;
+    background: url(../images/left_arrow.png) no-repeat; }
+    /* line 593, ../sass/screen.scss */
+    .portfolio_block .block_with_miniaturs #slider #nav_slider #left_nav:hover {
+      background-color: rgba(232, 232, 232, 0.2); }
+  /* line 597, ../sass/screen.scss */
+  .portfolio_block .block_with_miniaturs #slider #nav_slider #right_nav {
+    right: -50px;
+    background: url(../images/right_arrow.png) no-repeat; }
+    /* line 600, ../sass/screen.scss */
+    .portfolio_block .block_with_miniaturs #slider #nav_slider #right_nav:hover {
+      background-color: rgba(232, 232, 232, 0.2); }
+
+    /*
+=========================================
+=                FAQ                    =
+=========================================
+*/
+/* line 614, ../sass/screen.scss */
+.faq {
+  clear: both;
+  position: relative;
+  height: 500px; }
+  /* line 620, ../sass/screen.scss */
+  .faq:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -80px;
+    bottom: 0;
+    background: transparent url(../images/background/faq_bg_mini.png) no-repeat;
+    background-size: cover;
+    background-position: center center; }
+  /* line 631, ../sass/screen.scss */
+  .faq .container {
+    color: white;
+    text-shadow: 5px 5px 5px rgba(95, 95, 95, 0.4);
+    position: relative; }
+    /* line 635, ../sass/screen.scss */
+    .faq .container h3 {
+      text-shadow: 5px 5px 5px rgba(95, 95, 95, 0.4);
+      position: relative;
+      font-size: 45px;
+      left: 42px;
+      top: 25px;
+      font-family: Myriad Pro, arial, sans-serif; }
+      /* line 642, ../sass/screen.scss */
+      .faq .container h3:hover i {
+        -webkit-transform: scale3d(1.5, 1.2, 0.3);
+                transform: scale3d(1.5, 1.2, 0.3); }
+      /* line 645, ../sass/screen.scss */
+      .faq .container h3 i {
+        margin-right: 10px;
+        -webkit-transition: all 2s;
+        transition: all 2s; }
+    /* line 650, ../sass/screen.scss */
+    .faq .container .vert_strips {
+      position: absolute;
+      height: 456px;
+      width: 69px;
+      top: 14px;
+      left: 52px; }
+      /* line 657, ../sass/screen.scss */
+      .faq .container .vert_strips div {
+        width: 2px;
+        background-color: #03899c;
+        position: absolute; }
+        /* line 661, ../sass/screen.scss */
+        .faq .container .vert_strips div:first-child {
+          height: 67%;
+          top: 76px; }
+        /* line 665, ../sass/screen.scss */
+        .faq .container .vert_strips div:nth-child(2) {
+          height: 47%;
+          left: 30px;
+          top: 121px; }
+        /* line 670, ../sass/screen.scss */
+        .faq .container .vert_strips div:nth-child(3) {
+          height: 25%;
+          right: 4px;
+          top: 170px; }
+    /* line 677, ../sass/screen.scss */
+    .faq .container .buttons_faq {
+      margin-top: 55px; }
+      /* line 679, ../sass/screen.scss */
+      .faq .container .buttons_faq .orange_bgc {
+        background-color: #ff7b00; }
+        /* line 681, ../sass/screen.scss */
+        .faq .container .buttons_faq .orange_bgc:hover {
+          background-color: #d67418; }
+      /* line 685, ../sass/screen.scss */
+      .faq .container .buttons_faq a {
+        display: inline-block;
+        text-decoration: none;
+        border: none;
+        color: #f4f1f1;
+        background-color: #03899c;
+        -webkit-box-shadow: 5px 5px 5px rgba(95, 95, 95, 0.4);
+                box-shadow: 5px 5px 5px rgba(95, 95, 95, 0.4);
+        text-shadow: 5px 5px 5px rgba(95, 95, 95, 0.4);
+        position: relative;
+        font-size: 30px;
+        font-family: Myriad Pro, arial, sans-serif; }
+        /* line 697, ../sass/screen.scss */
+        .faq .container .buttons_faq a:hover {
+          color: white;
+          cursor: pointer;
+          background-color: #0f6875; }
+        /* line 702, ../sass/screen.scss */
+        .faq .container .buttons_faq a:first-child {
+          top: 22px;
+          left: 145px;
+          padding: 5px 236px; }
+        /* line 707, ../sass/screen.scss */
+        .faq .container .buttons_faq a:nth-child(3) {
+          top: 62px;
+          left: 145px;
+          padding: 5px 276px; }
+        /* line 712, ../sass/screen.scss */
+        .faq .container .buttons_faq a:nth-child(5) {
+          top: 102px;
+          left: 145px;
+          padding: 5px 316px; }
+        /* line 717, ../sass/screen.scss */
+        .faq .container .buttons_faq a:nth-child(7) {
+          top: 142px;
+          left: 145px;
+          padding: 5px 356px; }
+
+    /*
+=========================================
+=                ORDER                  =
+=========================================
+*/
+/* line 733, ../sass/screen.scss */
+.order .container {
+  text-shadow: 5px 5px 5px rgba(95, 95, 95, 0.3); }
+  /* line 735, ../sass/screen.scss */
+  .order .container h3 {
+    font-size: 39px;
+    font-family: Myriad Pro, arial, sans-serif;
+    color: #03899c;
+    text-align: center; }
+  /* line 741, ../sass/screen.scss */
+  .order .container p {
+    font-size: 22px;
+    font-family: Myriad Pro, arial, sans-serif;
+    width: 700px;
+    padding: 10px 15px;
+    margin: 25px auto;
+    text-align: justify;
+    -webkit-box-shadow: 5px 5px 5px rgba(95, 95, 95, 0.4);
+            box-shadow: 5px 5px 5px rgba(95, 95, 95, 0.4);
+    border: 2px #03899c solid; }
+  /* line 752, ../sass/screen.scss */
+  .order .container button {
+    background-color: #2bd27a;
+    margin: 0 auto;
+    display: block;
+    width: 230px;
+    height: 47px;
+    font-size: 30px;
+    font-family: Myriad Pro, arial, sans-serif;
+    color: #03899c;
+    background-color: #ff7b00;
+    border: none;
+    margin-bottom: 10px;
+    text-shadow: 5px 5px 5px rgba(95, 95, 95, 0.3);
+    -webkit-box-shadow: 5px 5px 5px rgba(95, 95, 95, 0.4);
+            box-shadow: 5px 5px 5px rgba(95, 95, 95, 0.4); }
+    /* line 766, ../sass/screen.scss */
+    .order .container button:hover {
+      background-color: #03899c;
+      color: #ff7b00;
+      cursor: pointer; }
+
+    /*
+=========================================
+=                FOOTER                 =
+=========================================
+*/
+/* line 781, ../sass/screen.scss */
+footer {
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+  background: linear-gradient(white, black); }
+  /* line 783, ../sass/screen.scss */
+  footer .container {
+    padding: 0px 13%;
+    font-size: 20px; }
+    /* line 786, ../sass/screen.scss */
+    footer .container h3 {
+      padding-top: 70px;
+      text-align: center;
+      font-size: 34px;
+      font-family: Impact, arial, sans-serif;
+      color: white; }
+    /* line 793, ../sass/screen.scss */
+    footer .container .contacts {
+      padding-bottom: 17px;
+      font-family: Myriad Pro, arial, sans-serif;
+      color: white; }
+      /* line 798, ../sass/screen.scss */
+      footer .container .contacts i {
+        color: #03899c; }
+      /* line 801, ../sass/screen.scss */
+      footer .container .contacts a {
+        text-decoration: none;
+        color: white; }
+      /* line 805, ../sass/screen.scss */
+      footer .container .contacts .left_contacts {
+        float: left;
+        margin-top: 40px;
+        letter-spacing: 1.77px; }
+        /* line 811, ../sass/screen.scss */
+        footer .container .contacts .left_contacts .email i {
+          font-size: 35px;
+          margin-right: 15px; }
+        /* line 816, ../sass/screen.scss */
+        footer .container .contacts .left_contacts .vk {
+          margin-top: -4px;
+          margin-left: -8px;
+          letter-spacing: 1.4px; }
+          /* line 820, ../sass/screen.scss */
+          footer .container .contacts .left_contacts .vk i {
+            font-size: 40px;
+            margin-right: 15px; }
+      /* line 826, ../sass/screen.scss */
+      footer .container .contacts .right_contacts {
+        float: right;
+        position: relative; }
+        /* line 830, ../sass/screen.scss */
+        footer .container .contacts .right_contacts .telephones_footer {
+          margin-top: 40px; }
+          /* line 833, ../sass/screen.scss */
+          footer .container .contacts .right_contacts .telephones_footer i {
+            float: left;
+            font-size: 55px; }
+          /* line 837, ../sass/screen.scss */
+          footer .container .contacts .right_contacts .telephones_footer .tel {
+            float: right;
+            padding-top: 3px;
+            position: relative;
+            right: 22px; }
+            /* line 843, ../sass/screen.scss */
+            footer .container .contacts .right_contacts .telephones_footer .tel span:last-child {
+              position: relative;
+              top: 7px; }
+        /* line 850, ../sass/screen.scss */
+        footer .container .contacts .right_contacts .fb {
+          position: relative;
+          top: -3px;
+          left: 1px; }
+          /* line 855, ../sass/screen.scss */
+          footer .container .contacts .right_contacts .fb i {
+            font-size: 40px;
+            margin-top: 4px;
+            margin-right: 15px; }
+  /* line 864, ../sass/screen.scss */
+  footer hr {
+    border: none;
+    color: #03899c;
+    background-color: #03899c;
+    height: 2px; }
+  /* line 870, ../sass/screen.scss */
+  footer .ps {
+    text-align: center;
+    margin-top: 23px;
+    font-size: 21px;
+    color: #D9D5D5;
+    padding-bottom: 23px;
+    font-family: Myriad Pro, arial, sans-serif; }
+    /* line 878, ../sass/screen.scss */
+    footer .ps i {
+      color: #ff7b00; }
+
+/* line 884, ../sass/screen.scss */
+.up_btn {
+  -webkit-transition: all 0s transform 0.3s linear !important;
+  transition: all 0s transform 0.3s linear !important;
+  width: 100px;
+  height: 100px;
+  background: transparent url("../images/balloon1.png") no-repeat;
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  cursor: pointer;
+  display: none; }
+  /* line 894, ../sass/screen.scss */
+  .up_btn:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
+
+/* line 900, ../sass/screen.scss */
+.popup_bg {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 50; }
+
+/* line 911, ../sass/screen.scss */
+.popup_form {
+  min-width: 272px;
+  height: 483px;
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 0;
+  bottom: 0;
+  width: 85%;
+  margin: auto;
+  max-width: 419px;
+  z-index: 51;
+  display: inline-table;
+  background: transparent url(../images/order_menu.png) no-repeat;
+  padding: 20px;
+  border-radius: 3px;
+  display: none;
+  opacity: 0;
+  -webkit-transition: 0s;
+  transition: 0s; }
+  /* line 930, ../sass/screen.scss */
+  .popup_form form {
+    margin: auto;
+    max-width: 681px;
+    height: 100%; }
+    /* line 934, ../sass/screen.scss */
+    .popup_form form input {
+      width: 100%;
+      border: 0;
+      height: 40px;
+      margin-bottom: 20px;
+      font-size: 16px;
+      color: black;
+      padding-left: 20px;
+      padding-right: 20px;
+      outline: none; }
+    /* line 945, ../sass/screen.scss */
+    .popup_form form input[type=submit] {
+      height: 75px;
+      background: #ff7b00;
+      border-radius: 35px;
+      margin: 15px 0 0;
+      font-family: "Georgia-Bold";
+      color: rgba(222, 218, 218, 0.94);
+      font-size: 30px;
+      text-transform: uppercase;
+      line-height: 75px;
+      cursor: pointer; }
+      /* line 956, ../sass/screen.scss */
+      .popup_form form input[type=submit]:hover {
+        background: #c16208;
+        color: white; }
+    /* line 961, ../sass/screen.scss */
+    .popup_form form textarea {
+      width: 100%;
+      height: 100px;
+      border: 0;
+      font-size: 16px;
+      color: black;
+      padding-left: 20px;
+      padding-top: 11px;
+      padding-right: 15px;
+      outline: none;
+      resize: none; }
+    /* line 973, ../sass/screen.scss */
+    .popup_form form input,
+    .popup_form form textarea {
+      font-family: "Georgia"; }
+      /* line 976, ../sass/screen.scss */
+      .popup_form form input::-webkit-input-placeholder,
+      .popup_form form textarea::-webkit-input-placeholder {
+        /* WebKit, Blink, Edge */
+        color: black; }
+      /* line 980, ../sass/screen.scss */
+      .popup_form form input:-moz-placeholder,
+      .popup_form form textarea:-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: black;
+        opacity: 1; }
+      /* line 985, ../sass/screen.scss */
+      .popup_form form input::-moz-placeholder,
+      .popup_form form textarea::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        color: black;
+        opacity: 1; }
+      /* line 990, ../sass/screen.scss */
+      .popup_form form input:-ms-input-placeholder,
+      .popup_form form textarea:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: black; }
+  /* line 996, ../sass/screen.scss */
+  .popup_form .close {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    width: 25px;
+    cursor: pointer; }
+    /* line 1002, ../sass/screen.scss */
+    .popup_form .close:hover {
+      -webkit-transform: rotate(10deg);
+              transform: rotate(10deg); }
+  /* line 1006, ../sass/screen.scss */
+  .popup_form p {
+    color: white;
+    text-align: center;
+    font-family: Myriad Pro;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 34px;
+    margin-top: 0;
+    margin-bottom: 20px; }
+
+/* line 1019, ../sass/screen.scss */
+.done {
+  opacity: 0;
+  display: none;
+  position: fixed;
+  top: 45%;
+  top: calc("50% - 25px");
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background: #0178ff;
+  height: 50px;
+  line-height: 50px;
+  font-weight: 700;
+  z-index: 51; }
+  /* line 1034, ../sass/screen.scss */
+  .done p {
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }
+
+    /*
+=========================================
+=                 HEADER                =
+=========================================
+*/
+/* line 1052, ../sass/screen.scss */
+.add_page header {
+  background-color: #03899c;
+  background: url("../images/background/bg_additional.jpg") repeat-x; }
+  /* line 1057, ../sass/screen.scss */
+  .add_page header .additional nav {
+    height: 312px;
+    background: none; }
+    /* line 1062, ../sass/screen.scss */
+    .add_page header .additional nav ul li {
+      -webkit-transform: none;
+              transform: none;
+      top: 60px; }
+      /* line 1065, ../sass/screen.scss */
+      .add_page header .additional nav ul li i {
+        font-size: 50px;
+        color: #ff7b00;
+        margin-right: 6px; }
+      /* line 1070, ../sass/screen.scss */
+      .add_page header .additional nav ul li a {
+        font-size: 50px;
+        font-family: Myriad Pro, arial, sans-serif;
+        text-shadow: none; }
+        /* line 1074, ../sass/screen.scss */
+        .add_page header .additional nav ul li a:hover {
+          color: #ff7b00; }
+      /* line 1078, ../sass/screen.scss */
+      .add_page header .additional nav ul li:nth-child(1) {
+        left: -13px; }
+      /* line 1081, ../sass/screen.scss */
+      .add_page header .additional nav ul li:nth-child(2) {
+        left: 220px; }
+      /* line 1084, ../sass/screen.scss */
+      .add_page header .additional nav ul li:nth-child(3) {
+        left: 430px; }
+      /* line 1090, ../sass/screen.scss */
+      .add_page header .additional nav ul li:nth-child(4) {
+        left: 860px; }
+  /* line 1099, ../sass/screen.scss */
+  .add_page header .additional h3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 14px; }
