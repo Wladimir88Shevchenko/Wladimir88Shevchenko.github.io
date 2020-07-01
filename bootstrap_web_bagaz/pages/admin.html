@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="ноутбук, нетбук, компьютер, дешево, качественно, acer, asus, apple, fujitsu, dell, hp, lenovo, msi">
+	<meta name="description" content="WP-Market - лучший интернет-магазин ноутбуков.">
+	<link rel="shortcut icon" href="../images/icon/logo.png">
+    <title>Admin WP-Market</title>
+    <link href="../css/bootstrap.css" rel="stylesheet">
+	<link href="../css/style.css" rel="stylesheet">
+	<link href="../css/admin-style.css" rel="stylesheet">
+	<link href="../css/font-awesome.css" rel="stylesheet">
+  </head>
+  <body>
+  <div class="navbar navbar-default navbar-static-top">
+	<h3 class="admin-head">Admin <i class="fa fa-wrench"></i></h3>
+  </div>
+  
+  
+  <!-- контент -->
+	<div class="container admin-container">
+		
+		<!-- кнопки управления контентом сайта -->
+		<div class="btn-group btn-group-vertical">
+			<!-- добавление контента -->
+			<a href="#spoiler-1" data-toggle="collapse" class="btn btn-primary btn-lg spoiler collapsed">Добавить товар <i class="fa fa-cart-plus"></i></a>
+			<!-- спойлер - добавить товар -->
+			<div class="collapse" id="spoiler-1">
+				<div class="well">
+					<div class="container reg-cont">
+						<form action="https://echo.wp-market.ru" method="post">
+							<label for="field-id">Название ноутбука:</label>
+							<br>
+							<input id="field-id" type="text" name="username">
+							<br>
+							
+							<label for="manufacturer-field">Производитель:</label>
+							<br>
+							<input id="manufacturer-field" type="text" name="manufacturer">
+							<br>
+							
+							<label for="CPU-id">Процессор:</label>
+							<br>
+							<input id="CPU-id" type="text" name="CPU">
+							<br>
+							
+							<label for="RAM-id">Оперативная память:</label>
+							<br>
+							<input id="RAM-id" type="text" name="RAM">
+							<br>
+							
+							<label for="video-id">Видеокарта:</label>
+							<br>
+							<input id="video-id" type="text" name="video">
+							<br>
+							
+							<label for="price-id">Цена:</label>
+							<br>
+							<input id="price-id" type="text" name="price">
+							<br>
+							
+							<label>Категория:</label>
+							<br>
+							<select name="category">
+								<option value="netbook">Нетбуки</option>
+								<option value="easy-task">Для не сложных задач</option>
+								<option value="for_work">Для работы и учебы</option>
+								<option value="for_buisness">Для бизнеса</option>
+								<option value="for_games">Геймерские ноутбуки</option>
+							</select>
+							<br>
+							
+							
+							<label>Изображение:</label>
+								<form action="https://echo.wp-market.ru" method="post" enctype="multipart/form-data">
+									<input type="file" name="avatar">
+								</form>
+							<br>
+							
+							<input type="checkbox" name="sensor" id="sensor-field" checked></input>
+							<label for="sensor-field">Сенсор</label>
+							<br>
+							
+							<label for="diagonal-id">Диагональ:</label>
+							<br>
+							<input id="diagonal-id" type="text" name="diagonal">
+							<br>
+							
+							<label for="comment-field">Доп. информация о ноутбуке:</label>
+							<br>
+							<textarea name="comment" id="comment-field" rows="3"></textarea>
+							<br>
+							
+							<input type="submit" name="regestration" id="reg_btn" value="Добавить">
+						</form>
+					</div>
+				</div>
+			</div>
+			<!-- редактирование контента -->
+			<a href="#" class="btn btn-primary btn-lg">Изменить информацию <i class="fa fa-cart-arrow-down"></i></a>
+			<!-- удаление контента -->
+			<a href="#" class="btn btn-primary btn-lg">Удалить товар <i class="fa fa-times-circle"></i></a>
+		</div>
+	</div>
+	
+	<!-- футер -->
+	<div class="container">
+		<div class="container footer">
+			<div class="row">
+					<div class="col-xs-3">
+						<ul class="list-unstyled">
+							<li>Магазин ноутбуков<br> «WP-Market™»<li>
+							
+						</ul>
+					</div>
+					<div class="col-xs-3">
+						<ul class="list-unstyled">
+							<li><a href="#">О нас</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-3">
+						<ul class="list-unstyled">
+							<li><a href="#">Вакансии</a></li>
+							<li><a href="#">Условия использования сайта</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-3">
+						<ul class="list-unstyled">
+							<li>Интернет-магазин разработан и поддерживается в компании WP<li>
+						</ul>
+					</div>
+			</div>
+			<hr>
+			<div class="row">
+					<div class="col-xs-8">
+						<ul class="list-unstyled list-inline pull-left">
+
+						</ul>
+					</div>
+					<div class="col-xs-4">
+						<p class="text-muted pull-right">© 2016 WP. All rights reserved</p>
+					</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- джава-скрипт -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+	<script src="../js/salvattore.min.js"></script>
+  </body>
+</html>

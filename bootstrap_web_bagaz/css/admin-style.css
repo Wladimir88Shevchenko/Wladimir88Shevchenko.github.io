@@ -1,0 +1,19 @@
+/* заголовок*/
+.admin-head{
+	margin-top: 10px;
+	 text-align:  center;
+}
+
+
+
+/* параметры контентной части админки */
+.admin-container{
+	margin-top: 5px;
+	min-height: 511px;
+}
+
+
+/* настройка спойлера добавления товара */
+.reg-cont{
+	width: 252px;
+}

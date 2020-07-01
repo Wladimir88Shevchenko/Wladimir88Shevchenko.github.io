@@ -1,0 +1,179 @@
+/*  центрирование */
+.center {
+	display:block; 
+	margin:0 auto;
+}
+
+/*  отступ от второстепенного меню до контента */
+.nav-tabs{
+	margin-bottom: 15px;
+}
+
+/*  адаптивность колонок контента  */
+@media screen and (max-width: 767px) {
+	.masonry[data-columns]::before {
+		content: '1 .col-xs-12';
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	.masonry[data-columns]::before {
+		content: '2 .col-xs-6';
+	}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+	.masonry[data-columns]::before {
+		content: '3 .col-xs-4';
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.masonry[data-columns]::before {
+		content: '3 .col-xs-4';
+	}
+}
+
+/* обнуление нижнего отступа для главного меню */
+.navbar{
+	margin-bottom: 0;
+}
+
+/* ссылка регестрации */
+.regestration-menu{
+	padding: 10px 20px 10px 11px; 
+    background-color: #f5f5f5;
+    border: 2px solid #cccccc;
+    width: 335px;
+    text-align: center;
+	margin-bottom: 10px;
+}
+
+/* меню регестрации */
+.columns-container > .btn{
+	float: left;
+}
+
+.columns-container > .regestration{
+	margin-top: 10px;
+	margin-left: 20px;
+	float: right;
+}
+
+
+
+/* ценник */
+.price{
+	padding: 8px 20px 8px 11px; 
+    background-color: #fff3b5;
+    border: 2px solid #cccccc;
+    width: 116px;
+    text-align: center;
+	margin-bottom: 12px;
+	font-weight: bold;
+}
+
+/* кнопка покупки */
+.buy{
+	width: 116px;
+	height: 38px;
+	font-weight: bold;
+}
+
+/* футер */
+
+.footer{
+	border-top: 2px solid #cccccc;
+	padding-top: 20px;
+	background-color: #f5f5f5; 
+}
+
+/* поиск */
+.search, .options{
+	display:inline-block;
+}
+
+
+.madal-search{
+	width: 720px;
+}
+
+
+
+/* плюс и минус для спойлера для визуального отображения состояния */
+a.spoiler:after{
+	content: " [-]";
+}
+
+a.spoiler.collapsed:after{
+	content: " [+]";
+}
+/* стиль разделов разширенного поиска */
+.oval-style{
+	padding: 5px;
+	border-radius: 15px;
+    border: 3px solid #f5f5f5;
+    background-color: #e0f0fd;
+	box-shadow: 0 0 3px rgba(0,0,0,0.5); /* Параметры тени */
+}
+
+/* кнопка поиск в рассширеном меню */
+.search-btn{
+	display: block;
+    margin: 15px auto;
+	width: 300px;
+}
+
+/* блок с регистрацией и кнопкой корзина */
+/* распорка */
+.clearfix::after {
+	content: "";
+    display: table;
+    clear: both;
+}
+
+.float-l{
+	float: left;
+}
+
+.float-r{
+	float: right;
+}
+
+/* модальное окно корзина */
+/* заголовок таблицы */
+.wt{
+    color: white;
+    background-color: #286090;
+    height: 37px;
+}
+
+.black{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.cart-table th{
+	padding: 5px;
+}
+
+/* ячейки таблицы */
+.cart-table td{
+    padding: 5px;
+    border-bottom: 1px solid lightgray;
+}
+
+/* ширина самой таблицы */
+.cart-table{
+	margin-top: 5px;
+	padding:0;
+    border-collapse: collapse;
+    width: 850px;
+}
+
+/* ширина раздела описания товара */
+.description{
+	width: 250px;
+}
+
+
