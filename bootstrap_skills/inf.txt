@@ -1,0 +1,26 @@
+1. Уроки по Bootstrap 3 | #16 Индикаторы прогресса
+https://www.youtube.com/watch?v=T3eU0wE9jNw&index=16&list=PLypd1VrGv7FPokhw3f5pwBQTHsU9T2mBq
+2. 
+
+<div class="container">
+				<div class="row">
+					<div class="progress">
+						<div class="progress-bar progress-bar-primary" style="min-width: 2%; width: 10%;">
+						
+						</div>
+						<div class="progress-bar progress-bar-warning" style="min-width: 2%; width: 10%;">
+						
+						</div>
+						<div class="progress-bar progress-bar-success" style="min-width: 2%; width: 10%;">
+						
+						</div>
+						<div class="progress-bar progress-bar-info" style="min-width: 2%; width: 10%;">
+						
+						</div>
+						
+						<div class="progress">
+							<div class="progress-bar progress-bar-info progress-bar-striped active" style="width: 44%;"></div>
+						</div>
+					</div>
+				</div>
+			</div>
